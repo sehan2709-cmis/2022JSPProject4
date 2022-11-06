@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+  </head>
+  <body>
+    <div>
+      <form name="form1" action="form_ok.jsp" onsubmit="return validateForm()" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="nickname">Nick Name:</label><br>
+        <input type="text" id="nickname" name="nickname"><br>
+
+        <p>Gender</p>
+        <label><input type="radio" name="gender" value="male"> male</label>
+        <label><input type="radio" name="gender" value="female"> female</label><br><br>
+
+        <input type="checkbox" id="dog" name="pet[]" value="dog">
+        <label for="dog"> I have a dog</label><br>
+        <input type="checkbox" id="cat" name="pet[]" value="cat">
+        <label for="cat"> I have a cat</label><br>
+        <input type="checkbox" id="fish" name="pet[]" value="fish">
+        <label for="fish"> I have a fish</label><br>
+
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <option value="between 1-10">1-10</option>
+          <option value="between 10-30">10-30</option>
+          <option value="between 31-50">31-50</option>
+          <option value="more than 51">51-??</option>
+        </select><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+
+
+        <label for="language">Speakable Langauge:</label><br>
+        <input type="text" id="language" name="language"><br>
+        <label for="location">Current Address:</label><br>
+        <input type="text" id="location" name="location"><br>
+
+        <p><label for="intro">Self Introduce:</label></p>
+        <textarea id="intro" name="intro" rows="4" cols="50">Write something about you, except the informatino that you have already check above.</textarea>
+        <br><br>
+
+
+
+        <p><label for="ask">How did came to this website:</label></p>
+        <textarea id="ask" name="ask" rows="4" cols="50">Please tell us, how you end up here.</textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </body>
+</html>
